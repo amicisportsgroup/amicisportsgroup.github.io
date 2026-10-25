@@ -119,7 +119,7 @@
       margin: 0; padding: 0; list-style: none;
       pointer-events: none;
     }
-    .contact-links li { position: absolute; }
+    .contact-links li { position: absolute; pointer-events: none; } /* stacked boxes must not block each other */
     .contact-links a {
       display: grid; place-items: center;
       width: 56px; height: 56px;
@@ -127,6 +127,7 @@
       border-radius: 50%;
       color: var(--gold-light);
       background: var(--maroon);
+      pointer-events: auto;
       opacity: 0; visibility: hidden;
       transform: translateX(0) scale(.4);
       transition: transform .6s var(--ease), opacity .3s, visibility 0s .6s, border-color .25s, background-color .25s, color .25s;
