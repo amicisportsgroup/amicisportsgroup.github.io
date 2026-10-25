@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amicisportsgroup.com/sitemap.xml
